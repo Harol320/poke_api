@@ -14,7 +14,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <AppProvider>
     <Router>
       <Menu />
         <Routes>
@@ -28,7 +28,7 @@ function App() {
         </Routes>
    
     </Router>
-    </>
+    </AppProvider>
   )
 }
 
